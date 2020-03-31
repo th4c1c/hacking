@@ -73,10 +73,9 @@ pilih:
         die("$red (!) See You $red (!)
 ");
     } elseif ($pilih == "y") {
-        echo "$red ATTENTION :$green Silahkan login melalui browser pertama untuk menghindari Checkpoint (mis: Opera, Chrome, UC, dan lain-lain)
+        echo "$red ATTENTION :$green frist time login whit chrome or opra mini (mis: Opera, Chrome, UC, dan lain-lain)
 ";
-        echo "$brown Saat Anda mengetik kata sandi, tetapi disembunyikan, Lanjutkan setelah selesai, silakan klik Enter
-";
+        echo "$brown your password is in hiden, please click enter well be done
 
 
         echo "
@@ -130,7 +129,7 @@ fclose($fh);
     $userid = $json['session_cookies'][0]['value'];
     $token = $json['access_token'];
     if (preg_match('/session_key/', $me)) {
-        echo "$red Proses Masuk Kedalam Akun Facebook";
+        echo "$red Process login in your Akun Facebook";
         echo ".";
         sleep(1);
         echo ".";
@@ -144,7 +143,7 @@ fclose($fh);
     } else {
         echo ("
 ");
-        die("$red [!]Silahkan Cek Username / Password 
+        die("$red [!]please ceck your email / Password again ..."); 
 ");
         echo "
 ";
